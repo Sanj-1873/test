@@ -1,17 +1,78 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-div {
+
+
+.box {
+  flex: 1;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  transition: 0.75s;
+  color: #FFF;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  transition: 0.75s;
+  border: 2px solid #FFF;
+  border-radius: 100%;
+  border-top: 10px solid #FFF;
+  border-bottom: 10px solid #FFF;
+  border-left: 10px solid #000;
+  border-right: 10px solid #000;
+}
+
+.box:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+
+  }
+  .box{
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+.circles {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+}
+
+.circle {
+  border-radius: 100%;
+  position: absolute;
+}
+
+.cir-a {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 250, 0, 0.2);
+  right: 10px;
+  top: 40px;
+}
+
+.cir-b {
   width: 200px;
   height: 200px;
-  margin-bottom: 10px;
-  background-color: #000;
-}
-p {
-  color: green;
-}
-.block-a, .block-c {
-  background-color: blue;
+  background-color: rgba(250, 0, 0, 0.2);
+  right: 50px;
+  top: 100px;
 }
 
-div > p {
-  font-size: 40px;
+.cir-c {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 250, 0.2);
+  left: 10px;
+  top: 200px;
 }
